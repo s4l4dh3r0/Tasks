@@ -21,7 +21,7 @@ body {
     color: #1B1C21;
 }
 
-.navigation {
+.upper-menu {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -30,6 +30,25 @@ body {
     width: 320px;
     height: 88px;
     border-bottom: 1px solid #D9FFF5;
+}
+
+.upper-menu button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+}
+
+.upper-menu button:nth-child(1) {
+    background: #FF3E79 url("img/iconburger.svg") no-repeat center;
+}
+
+.upper-menu button:nth-child(9) {
+    background: #FF3E79 url("img/repair.svg") no-repeat center;
+}
+
+.upper-menu button:nth-child(10) {
+    background: #FF3E79 url("img/checkstatus.svg") no-repeat center;
 }
 
 main{
@@ -52,7 +71,6 @@ main{
     
     font-family: "TT Lakes Medium";
     font-size: 16px;
-    color: #7E7E82;
 } 
 
 .menu::-webkit-scrollbar {
@@ -64,6 +82,11 @@ main{
     align-content: center;
     height: 36px;
     padding: 0 10px;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: #7E7E82;
 }
 
 .menu li:hover {
@@ -103,15 +126,13 @@ section p {
     margin-bottom: 16px;
 }
 
-.company-image{
-    background-image: url(img/CompIMGdesktop.jpg);
-    background-size: 320px 176px;
+.company-image {
     width: 320px;
     height: 176px;
     margin-left: -16px;
 }
 
-.navigation__tablet-button,
+.upper-menu__tablet-button,
 .tablet__expanded-text,
 .desktop__expanded-text,
 .title__desktop-menu {
@@ -129,16 +150,18 @@ section p {
         padding: 24px 24px 0;
     }
     
-    .navigation__tablet-button,
+    .upper-menu__tablet-button,
     .tablet__expanded-text {
-    display: block;
-}
+        display: block;
+    }
 
-    .navigation {
+    .upper-menu__divider--mobile {
+        display: none;
+    }
+
+    .upper-menu {
         display: flex;
         align-items: center;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
         gap: 20px;
         width: 768px;
         height: 88px;
@@ -147,22 +170,20 @@ section p {
         padding: 0 24px;
     }
 
-    .navigation div:nth-child(1) {
-        order: -3;
-    }
-
-    .navigation div:nth-child(2) {
-        order: -1;
+    .upper-menu img:nth-child(3) {
         margin-right: 218px;
     }
 
-    .navigation div:nth-child(3) {
-        order: -2;
+    .upper-menu button:nth-child(5) {
+        background: #FF3E79 url("img/call.svg") no-repeat center;
     }
 
-    .navigation div:nth-child(4),
-    .navigation div:nth-child(5) {
-        order: 1;
+    .upper-menu button:nth-child(6) {
+        background: #FF3E79 url("img/chat.svg") no-repeat center;
+    }
+
+    .upper-menu button:nth-child(7) {
+        background: #FF3E79 url("img/profile.svg") no-repeat center;
     }
 
     .title__header {
@@ -187,10 +208,10 @@ section p {
         padding: 0;
     }
 
-    .company-image{
-        background-size: 360px 208px;
+    .company-image {
         width: 360px;
         height: 208px;
+        margin: 0;
     }
    }
 
@@ -217,18 +238,40 @@ section p {
 
     .title__desktop-menu {
         display: flex;
+    }
+
+    .title__desktop-menu button {
+        width: 200px;
+        height: 40px;
         font-family: "TT Lakes Medium";
         font-size: 16px;
         color: #1B1C21;
+        padding: 0;
+        border: none;
+        background-color: #F8F8F8;
     }
 
-    .title__desktop-menu div {
-        align-content: center;
-        margin-left: 32px;
-    }
-
-    .title__desktop-menu div:nth-child(2n) {
+    .title__desktop-menu--icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        border: none;
         margin-left: 8px;
+    }
+
+    .title__desktop-menu--icon,
+    .title__desktop-menu--text {
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    .title__desktop-menu--repair {
+        background: #FF3E79 url("img/repair.svg") no-repeat center;
+    }
+
+    .title__desktop-menu--checkstatus {
+        background: #FF3E79 url("img/checkstatus.svg") no-repeat center;
     }
 
     .menu {
@@ -239,7 +282,7 @@ section p {
         flex-wrap: wrap;
     }
 
-    .menu__button{
+    .menu__button {
         margin-bottom: 8px;
     }
 
@@ -260,10 +303,8 @@ section p {
         width: 490px;
     }
 
-    .company-image{
-        background-size: 532px 307px;
+    .company-image {
         width: 532px;
         height: 307px;
     }
-    
 }
