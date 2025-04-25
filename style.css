@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "TT Lakes Regular";
+    src: url(font/TTLakes-Regular.ttf);
+}
+
+@font-face {
+    font-family: "TT Lakes Medium";
+    src: url(font/TTLakes-Medium.ttf);
+}
+
+@font-face {
+    font-family: "TT Lakes Bold";
+    src: url(font/TTLakes-Bold.ttf);
+}
+
+body {
+    width: 320px;
+    height: 1024px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-right: auto;
+    padding: 19px 24px;
+    font-family: "TT Lakes Medium", serif;
+    font-size: 16px;
+    color: #1B1C21;
+    box-shadow: 5px -15px 55px -15px grey;
+}
+
+.upper-menu {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    height: 52px;
+    margin-bottom: 46px;
+}
+
+.upper-menu button:nth-child(1) {
+    background: #FF3E79 url("img/cross.svg") no-repeat center;
+}
+
+.upper-menu button:nth-child(3) {
+    background: #FF3E79 url("img/search.svg") no-repeat center;
+    margin-left: 61px;
+}
+
+.main-menu {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 236px;
+}
+
+.main-menu > li > a {
+    display: block;
+    height: 24px;
+    margin-bottom: 32px;
+}
+
+.main-menu > li > a:hover {
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    opacity: 0.5;
+}
+.main-menu > li:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    transform: translateY(-6px);
+    width: 6px;
+    height: 36px;
+    background: url(img/highlight.svg) no-repeat center;  
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.lower-menu {
+    margin-bottom: 40px;
+}
+
+.lower-menu__buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.lower-menu button:nth-child(1) {
+    background: #FF3E79 url("img/call.svg") no-repeat center;
+}
+
+.lower-menu button:nth-child(2) {
+    background: #FF3E79 url("img/chat.svg") no-repeat center;
+}
+
+.lower-menu button:nth-child(3) {
+    background: #FF3E79 url("img/profile.svg") no-repeat center;
+}
+
+.lower-menu__contacts span {
+    display: block;
+}
+
+.lower-menu__contacts span:nth-child(2){
+    font-family: "TT Lakes Bold", serif;
+    font-size: 25px;
+    margin-top: 12px;
+}
+
+.language a{
+    margin-right: 7px;
+}
+
+.language--current {
+    color: #7E7E82;
+}
