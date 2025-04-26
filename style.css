@@ -34,15 +34,6 @@ body {
     margin-bottom: 46px;
 }
 
-.upper-menu button:nth-child(1) {
-    background: #FF3E79 url("img/cross.svg") no-repeat center;
-}
-
-.upper-menu button:nth-child(3) {
-    background: #FF3E79 url("img/search.svg") no-repeat center;
-    margin-left: 61px;
-}
-
 .main-menu {
     list-style-type: none;
     padding: 0;
@@ -76,6 +67,28 @@ button {
     height: 40px;
     border-radius: 100%;
     border: none;
+    background: #FF3E79 no-repeat center;
+}
+
+.upper-menu__button--cross {
+    background-image: url("img/cross.svg");
+}
+
+.upper-menu__button--search {
+    background-image: url("img/search.svg");
+    margin-left: 61px;
+}
+
+.lower-menu__button--call {
+    background-image: url("img/call.svg");
+}
+
+.lower-menu__button--chat {
+    background-image: url("img/chat.svg");
+}
+
+.lower-menu__button--profile {
+    background-image: url("img/profile.svg");
 }
 
 a {
@@ -93,32 +106,23 @@ a {
     margin-bottom: 16px;
 }
 
-.lower-menu button:nth-child(1) {
-    background: #FF3E79 url("img/call.svg") no-repeat center;
-}
-
-.lower-menu button:nth-child(2) {
-    background: #FF3E79 url("img/chat.svg") no-repeat center;
-}
-
-.lower-menu button:nth-child(3) {
-    background: #FF3E79 url("img/profile.svg") no-repeat center;
-}
-
-.lower-menu__contacts span {
+.lower-menu__contacts a {
     display: block;
 }
 
-.lower-menu__contacts span:nth-child(2){
+.lower-menu__contacts--number {
     font-family: "TT Lakes Bold", serif;
     font-size: 25px;
     margin-top: 12px;
 }
 
-.language a{
-    margin-right: 7px;
+.language {
+    list-style-type: none;
+    display: flex;
+    gap: 7px;
+    padding: 0;
 }
 
 .language--current {
     color: #7E7E82;
-}
+} 
