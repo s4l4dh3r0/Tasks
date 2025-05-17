@@ -1,0 +1,199 @@
+@media screen and (max-width: $screen-md) {
+  .swiper-slide--mobile {
+    display: none;
+  }
+}
+
+.price-info {
+  border-bottom: 1px solid $section-border-color;
+  padding-bottom: 40px;
+
+  a {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: $primary-text-color;
+    font-family: 'TT Lakes Medium';
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 18px;
+      background: url(/src/img/dropdown.svg) no-repeat center;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    padding-right: 25px;
+  }
+
+  .swiper::after {
+    height: 200px;
+  }
+
+  .swiper-pagination {
+    display: block;
+    margin-top: 16px;
+  }
+}
+
+.price-card {
+  width: 260px;
+  height: 200px;
+  background-color: $menu-background-color;
+  border-radius: 6px;
+  padding: 8px 16px 8px;
+  box-sizing: border-box;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 120px;
+  grid-template-areas:
+    'description description'
+    'price price'
+    'time button';
+
+  button {
+    grid-area: button;
+    border-radius: 16px;
+    width: 120px;
+    height: 32px;
+    padding-top: 2px;
+    padding-left: 14px;
+    align-self: end;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: start;
+    font-weight: 700;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 7px;
+      height: 12px;
+      background: url(/src/img/dropdownwhite.svg) no-repeat center;
+      margin-left: 25px;
+    }
+  }
+}
+
+.price-card__description {
+  grid-area: description;
+
+  &::before {
+    content: 'Ремонтные услуги';
+    display: block;
+    color: $secondary-text-color;
+    font-family: 'TT Lakes Medium';
+    height: 20px;
+  }
+}
+
+.price-card__price {
+  grid-area: price;
+
+  &::before {
+    content: 'Цена';
+    display: block;
+    color: $secondary-text-color;
+    font-family: 'TT Lakes Medium';
+    height: 20px;
+  }
+}
+
+.price-card__time {
+  grid-area: time;
+
+  &::before {
+    content: 'Срок';
+    display: block;
+    color: $secondary-text-color;
+    font-family: 'TT Lakes Medium';
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .price-card__description::before {
+    display: none;
+  }
+
+  .price-card__price::before {
+    display: none;
+  }
+
+  .price-card__time::before {
+    display: none;
+  }
+
+  .swiper-slide:nth-child(2) .price-card {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .swiper-slide:last-child .price-card {
+    border-radius: 0 0 16px 16px;
+  }
+
+  .price-card {
+    width: 720px;
+    height: 65px;
+    grid-template-columns: auto 100px 100px 120px;
+    grid-template-areas: 'description price time button';
+    border-radius: 0;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 688px;
+      height: 1px;
+      margin: 0 16px;
+      background-color: #eaeaea;
+    }
+
+    button {
+      align-self: center;
+    }
+  }
+
+  .swiper-slide--mobile {
+    .price-card {
+      background-color: $main-background-color;
+      color: $secondary-text-color;
+      font-family: 'TT Lakes Medium', serif;
+    }
+  }
+
+  .price-info {
+    .swiper-slide:first-child .price-card,
+    .swiper-slide:last-child .price-card {
+      &::after {
+        display: none;
+      }
+    }
+
+    p {
+      width: 421px;
+    }
+
+    a {
+      width: 400px;
+    }
+  }
+}
+@media screen and (min-width: $screen-lg) {
+  .price-card {
+    width: 1050px;
+    grid-template-columns: auto 210px 210px 120px;
+
+    &::after {
+      width: 1008px;
+    }
+  }
+}

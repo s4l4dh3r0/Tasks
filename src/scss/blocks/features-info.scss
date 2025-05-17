@@ -1,0 +1,76 @@
+.features-info {
+  .swiper-slide a {
+    width: 240px;
+    height: 160px;
+    font-family: 'TT Lakes Medium';
+    text-decoration: none;
+    color: $primary-text-color;
+    align-items: flex-start;
+    padding: 16px;
+
+    &::after {
+      bottom: -85px;
+    }
+  }
+
+  .swiper-pagination {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .swiper::after {
+    height: 160px;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    button {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .features-info {
+    .swiper {
+      display: block;
+      width: 720px;
+    }
+
+    .swiper-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 16px;
+      column-gap: 23px;
+    }
+
+    .swiper-wrapper--short {
+      overflow: hidden;
+      height: 160px;
+    }
+
+    .swiper-slide a {
+      width: 224px;
+    }
+
+    .swiper::after {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .features-info {
+    .swiper {
+      width: 1120px;
+    }
+
+    .swiper-wrapper {
+      row-gap: 16px;
+      column-gap: 32px;
+    }
+
+    .swiper-slide a {
+      width: 240px;
+    }
+  }
+}

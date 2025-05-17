@@ -1,0 +1,156 @@
+.side-menu {
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
+.side-menu__wrapper {
+  width: 320px;
+  background-color: $menu-background-color;
+  box-sizing: border-box;
+  margin: 0;
+  margin-right: auto;
+  padding: 19px 24px;
+  font-family: 'TT Lakes Medium', serif;
+  font-size: 16px;
+  color: $primary-text-color;
+  box-shadow: 5px -15px 55px -15px grey;
+}
+
+.side-menu--opened {
+  display: block;
+  position: fixed;
+  z-index: 10;
+}
+
+.side-menu__main {
+  margin-bottom: 0px;
+}
+
+.side-menu__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 17px;
+  height: 52px;
+  margin-bottom: 46px;
+}
+
+.side-menu__top-button--cross {
+  background-image: url(/src/img/cross.svg);
+
+  @media screen and (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.side-menu__top-button--search {
+  background-image: url(/src/img/search.svg);
+  margin-left: 50px;
+}
+
+.side-menu__main {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    position: relative;
+  }
+}
+
+.side-menu__main > li > a {
+  display: block;
+  height: 24px;
+  margin-bottom: 32px;
+}
+
+.side-menu__main > li > a:hover {
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  opacity: 0.5;
+}
+.side-menu__main > li:hover::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -25px;
+  transform: translateY(-6px);
+  width: 6px;
+  height: 36px;
+  background: url(/src/img/highlight.svg) no-repeat center;
+}
+
+.side-menu a {
+  color: #1b1c21;
+}
+
+.side-menu__bottom {
+  margin-bottom: 40px;
+}
+
+.side-menu__bottom-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.side-menu__bottom-button--call {
+  background-image: url(/src/img/call.svg);
+}
+
+.side-menu__bottom-button--chat {
+  background-image: url(/src/img/chat.svg);
+}
+
+.side-menu__bottom-button--profile {
+  background-image: url(/src/img/profile.svg);
+}
+
+.side-menu__bottom-contacts a {
+  display: block;
+}
+
+.side-menu__bottom-contacts--number {
+  font-family: 'TT Lakes Bold', serif;
+  font-size: 25px;
+  margin-top: 12px;
+}
+
+.language {
+  list-style-type: none;
+  display: flex;
+  gap: 7px;
+  padding: 0;
+
+  .language--current {
+    color: #7e7e82;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .side-menu__main {
+    margin-bottom: 236px;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .desktop-page__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .side-menu {
+    display: block;
+    position: static;
+    z-index: 0;
+  }
+
+  .side-menu__wrapper {
+    display: block;
+    position: static;
+    width: 320px;
+    box-shadow: none;
+  }
+}

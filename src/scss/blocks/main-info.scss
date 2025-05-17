@@ -1,0 +1,146 @@
+.main-info__header {
+  font-family: 'TT Lakes Bold';
+  font-size: 28px;
+  width: 288px;
+  height: 40px;
+  letter-spacing: -0.6px;
+  padding-top: 24px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(/src/img/highlight.svg);
+    width: 4px;
+    height: 40px;
+    left: -16px;
+    top: 20px;
+  }
+}
+
+.main-info__desktop-menu {
+  display: none;
+}
+
+.main-info__menu {
+  list-style-type: none;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  align-items: center;
+  padding: 0;
+  font-family: 'TT Lakes Medium', serif;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  li {
+    text-wrap: nowrap;
+    align-content: center;
+    height: 36px;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    &:hover {
+      border: 2px solid #b8ffec;
+      border-radius: 5px;
+      background-color: $menu-background-color;
+    }
+
+    a {
+      text-decoration: none;
+      color: $secondary-text-color;
+    }
+  }
+}
+
+.main-info__content {
+  font-size: 14px;
+
+  .text--short {
+    height: 90px;
+    overflow: hidden;
+  }
+}
+
+.main-info__text {
+  line-height: 18px;
+  padding-right: 16px;
+}
+
+.company-image {
+  width: 320px;
+  height: 176px;
+  margin-left: -16px;
+  padding: 16px 0 24px;
+}
+
+@media screen and (min-width: $screen-md) {
+  .main-info__content {
+    display: inline-block;
+    width: 312px;
+    margin-right: 40px;
+    vertical-align: top;
+
+    .text--short {
+      height: 160px;
+    }
+  }
+
+  .company-image {
+    width: 360px;
+    height: 208px;
+  }
+
+  .main-info__header {
+    &::before {
+      left: -24px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .main-info {
+    padding-top: 18px;
+  }
+
+  .main-info__menu {
+    overflow: unset;
+    flex-wrap: wrap;
+  }
+
+  .main-info__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 34px;
+  }
+
+  .main-info__desktop-menu {
+    display: flex;
+    gap: 160px;
+    justify-content: flex-end;
+    font-family: 'TT Lakes Medium', serif;
+    font-size: 16px;
+  }
+
+  .main-info__header {
+    &::before {
+      left: -34px;
+    }
+  }
+
+  .company-image {
+    width: 532px;
+    height: 308px;
+  }
+
+  .main-info__content {
+    width: 490px;
+
+    .text--short {
+      height: 160px;
+    }
+  }
+}

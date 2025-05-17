@@ -1,0 +1,84 @@
+button {
+  background: $button-color no-repeat center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+    transition: 0.1s;
+  }
+}
+
+.top-menu__button--burger {
+  background-image: url(/src/img/iconburger.svg);
+}
+
+.top-menu__button--call {
+  background-image: url(/src/img/call.svg);
+}
+
+.top-menu__button--chat {
+  background-image: url(/src/img/chat.svg);
+}
+
+.top-menu__button--profile {
+  background-image: url(/src/img/profile.svg);
+}
+
+.top-menu__button--repair {
+  background-image: url(/src/img/repair.svg);
+}
+
+.top-menu__button--checkstatus {
+  background-image: url(/src/img/checkstatus.svg);
+}
+
+.main-info__desktop-button--repair {
+  background-image: url(/src/img/repair.svg);
+  position: relative;
+
+  &::before {
+    content: 'Оставить заявку';
+    width: 128px;
+    position: absolute;
+    transform: translate(-155px, -10px);
+  }
+}
+
+.main-info__desktop-button--checkstatus {
+  background-image: url(/src/img/checkstatus.svg);
+
+  &::before {
+    content: 'Статус ремонта';
+    width: 128px;
+    position: absolute;
+    transform: translate(-155px, -10px);
+  }
+}
+
+.expand-button {
+  background-color: transparent;
+  width: 132px;
+  height: 24px;
+  border-radius: 0;
+  font-family: 'TT Lakes Medium';
+  font-size: 16px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 11px;
+    background: url(/src/img/expand.svg) no-repeat center;
+    transform: translate(-15px, 3px);
+  }
+}
+
+.expand-button--opened {
+  &::before {
+    transform: translate(-15px, 3px) rotate(180deg);
+  }
+}
