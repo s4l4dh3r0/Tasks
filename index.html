@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="scss/style.scss">
+    <title></title>
+  <link href="style.css" rel="stylesheet"></head>
+
+  <body>
+    <header>
+      <div class="top-menu">
+        <button class="top-menu__button--burger" id="burger-btn"></button>
+        <img src="img/logo.svg" alt="company_logo">
+        <button class="top-menu__button--call tablet-button" id="callback-btn"></button>
+        <button class="top-menu__button--chat tablet-button" id="feedback-btn"></button>
+        <button class="top-menu__button--profile tablet-button"></button>
+        <button class="top-menu__button--repair"></button>
+        <button class="top-menu__button--checkstatus"></button>
+      </div>
+    </header>
+
+    <div class="desktop-page__wrapper">
+      <aside class="side-menu">
+        <div class="side-menu__wrapper">
+          <div class="side-menu__top">
+            <button class="side-menu__top-button--cross" id="close-btn"></button>
+            <img src="img/logo.svg" alt="company_logo">
+            <button class="side-menu__top-button--search"></button>
+          </div>
+
+          <nav>
+            <ul class="side-menu__main">
+              <li><a href="#">Ремонт техники</a></li>
+              <li><a href="#">Услуги и сервисы</a></li>
+              <li><a href="#">Корпоративным клиент</a></li>
+              <li><a href="#">Продавцам техники</a></li>
+              <li><a href="#">Партнерам</a></li>
+              <li><a href="#">Производителям</a></li>
+              <li><a href="#">Наши сервисные центры</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <div class="side-menu__bottom">
+            <div class="side-menu__bottom-buttons">
+              <button class="side-menu__bottom-button--call" id="callback-btn"></button>
+              <button class="side-menu__bottom-button--chat" id="feedback-btn"></button>
+              <button class="side-menu__bottom-button--profile"></button>
+            </div>
+            <div class="side-menu__bottom-contacts">
+              <a href="mailto:mail@cps.com" class="side-menu__bottom-contacts--mail">mail@cps.com</a>
+              <a href="tel:88008908900" class="side-menu__bottom-contacts--number">8 800 890 8900</a>
+            </div>
+          </div>
+
+          <ul class="language">
+            <li><a href="#" class="language--current">RU</a></li>
+            <li><a href="#">EN</a></li>
+            <li><a href="#">CH</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-page__wrapper">
+        <main>
+          <section class="main-info">
+            <div class="main-info__title">
+              <h1 class="main-info__header">Услуги и сервисы</h1>
+              <div class="main-info__desktop-menu">
+                <button class="main-info__desktop-button--repair"> </button>
+                <button class="main-info__desktop-button--checkstatus">
+                </button>
+              </div>
+            </div>
+
+            <nav>
+              <ul class="main-info__menu">
+                <li><a href="#">Ремонтируемые устройства</a></li>
+                <li><a href="#">Дополнительные услуги</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Ремонтируемые бренды</a></li>
+                <li><a href="#">Цены на услуги</a></li>
+                <li><a href="#">Специальные цены</a></li>
+                <li><a href="#">Адреса сервисных центров</a></li>
+              </ul>
+            </nav>
+
+            <article class="main-info__content">
+              <p class="main-info__text text--short">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя. <br><br>
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким. Мы являемся
+                авторизованным сервисным центром по ремонту техники Dell. Только
+                у нас вы можете отремонтировать свой ноутбук Dell с официальной
+                гарантией производителя. <br><br>
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
+              <button class="read-more expand-button" id="read-more-btn">
+                <span class="expand-button__text">Читать далее</span>
+              </button>
+            </article>
+            <img src="img/imgdesktop.jpg" class="company-image">
+          </section>
+
+          <section class="brands-info">
+            <h2>Ремонт техники различных брендов</h2>
+
+            <div class="swiper">
+              <ul class="swiper-wrapper swiper-wrapper--short" id="swiper-brands">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/lenovo.png">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/samsung.png">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/apple.png">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/viewsonic.png">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/bosch.png">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/hp.png">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/acer2.png" class="acer" style="width: 94px; height: 24px">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/sony.png">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/lenovoPH.png">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/samsungPH.png">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="img/applePH.png">
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <button class="show-more expand-button" id="show-more-btn-1">
+              <span class="show-more__text">Показать все</span>
+            </button>
+          </section>
+
+          <section class="features-info">
+            <h2>Ремонт различных видов техники</h2>
+            <div class="swiper">
+              <ul class="swiper-wrapper swiper-wrapper--short">
+                <li class="swiper-slide"><a href="#">Ремонт ноутбуков</a></li>
+                <li class="swiper-slide"><a href="#">Ремонт планшетов</a></li>
+                <li class="swiper-slide"><a href="#">Ремонт ПК</a></li>
+                <li class="swiper-slide"><a href="#">Ремонт мониторов</a></li>
+                <li class="swiper-slide"><a href="#">Ремонт ноутбуков2</a></li>
+                <li class="swiper-slide"><a href="#">Ремонт планшетов2</a></li>
+                <li class="swiper-slide"><a href="#">Ремонт ПК2</a></li>
+                <li class="swiper-slide"><a href="#">Ремонт мониторов2</a></li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <button class="show-more expand-button" id="show-more-btn-2">
+              <span class="show-more__text">Показать все</span>
+            </button>
+          </section>
+
+          <section class="price-info">
+            <h2>Цены на услуги</h2>
+            <div class="swiper">
+              <ul class="swiper-wrapper swiper-wrapper--short">
+                <li class="swiper-slide swiper-slide--mobile">
+                  <div class="price-card">
+                    <span class="price-card__description">Ремонтные услуги</span>
+                    <span class="price-card__price">Цена</span>
+                    <span class="price-card__time">Срок</span>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="price-card">
+                    <span class="price-card__description">Диагностика</span>
+                    <span class="price-card__price">Бесплатно</span>
+                    <span class="price-card__time">30 мин</span>
+                    <button>Заказать</button>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="price-card">
+                    <span class="price-card__description">Замена дисплея</span>
+                    <span class="price-card__price">1 000 ₽</span>
+                    <span class="price-card__time">30-120 мин</span>
+                    <button>Заказать</button>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="price-card">
+                    <span class="price-card__description">Замена полифонического динамика</span>
+                    <span class="price-card__price">1 000 ₽</span>
+                    <span class="price-card__time">30-120 мин</span>
+                    <button>Заказать</button>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="price-card">
+                    <span class="price-card__description">
+                      Тестирование с выдачей технического заключения
+                    </span>
+                    <span class="price-card__price">1 000 ₽</span>
+                    <span class="price-card__time">30-120 мин</span>
+                    <button>Заказать</button>
+                  </div>
+                </li>
+                <li class="swiper-slide">
+                  <div class="price-card">
+                    <span class="price-card__description">Замена программного обеспечения</span>
+                    <span class="price-card__price">1 000 ₽</span>
+                    <span class="price-card__time">30-120 мин</span>
+                    <button>Заказать</button>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <p>
+              Все цены указаны с учетом НДС. Стоимость ремонта указана на
+              единичную услугу. Для получения коммерческого предложения на
+              постоянное обслуживание, оставьте заявку.
+            </p>
+
+            <a href="#">Получить коммерческое предложение</a>
+          </section>
+        </main>
+
+        <footer>
+          <span> @2019 CPS<br>Разработано командой Apesong </span>
+          <a href="#"> Политика конфиденциальности </a>
+          <span>
+            Информация, размещенная на данной странице, не является публичной
+            офертой
+          </span>
+        </footer>
+      </div>
+    </div>
+
+    <div class="feedback">
+      <div class="feedback__wrapper">
+        <div class="feedback-menu__wrapper">
+          <div class="feedback-menu">
+            <button class="feedback-menu__button--cross" id="close-btn"></button>
+          </div>
+        </div>
+        <div class="feedback__title">
+          <h2 class="feedback__title--text">Обратная связь</h2>
+        </div>
+        <form action="#" class="form">
+          <input type="text" placeholder="Имя" class="user-data">
+          <input type="tel" placeholder="Телефон" class="user-data">
+          <input type="email" placeholder="Электронная почта" class="user-data">
+          <textarea rows="4" placeholder="Сообщение" class="user-data"></textarea>
+          <p class="form__text">Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="form__link">обработку персональных данных</a> и
+            соглашаетесь с нашей
+            <a href="#" class="form__link">политикой конфиденциальности</a>
+          </p>
+          <button type="submit" class="form__button">отправить</button>
+        </form>
+      </div>
+    </div>
+  <script type="text/javascript" src="./js/bundle.js"></script></body>
+</html>
