@@ -32,7 +32,7 @@
 }
 
 .feedback-menu__button--cross {
-  background-image: url(/src/img/cross.svg);
+  background-image: url(../img/cross.svg);
 }
 
 .feedback__title--text {
@@ -50,7 +50,7 @@
   &::before {
     content: '';
     position: absolute;
-    background-image: url(/src/img/highlight.svg);
+    background-image: url(../img/highlight.svg);
     width: 4px;
     height: 40px;
     right: 316px;

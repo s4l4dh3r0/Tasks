@@ -21,7 +21,7 @@
 
 .swiper-slide a::after {
   content: '';
-  background: url(/src/img/dropdown.svg) no-repeat center;
+  background: url(../img/dropdown.svg) no-repeat center;
   border: 2px solid $button-color;
   border-radius: 100%;
   display: inline-block;

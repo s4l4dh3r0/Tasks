@@ -13,31 +13,31 @@ button {
 }
 
 .top-menu__button--burger {
-  background-image: url(/src/img/iconburger.svg);
+  background-image: url(../img/iconburger.svg);
 }
 
 .top-menu__button--call {
-  background-image: url(/src/img/call.svg);
+  background-image: url(../img/call.svg);
 }
 
 .top-menu__button--chat {
-  background-image: url(/src/img/chat.svg);
+  background-image: url(../img/chat.svg);
 }
 
 .top-menu__button--profile {
-  background-image: url(/src/img/profile.svg);
+  background-image: url(../img/profile.svg);
 }
 
 .top-menu__button--repair {
-  background-image: url(/src/img/repair.svg);
+  background-image: url(../img/repair.svg);
 }
 
 .top-menu__button--checkstatus {
-  background-image: url(/src/img/checkstatus.svg);
+  background-image: url(../img/checkstatus.svg);
 }
 
 .main-info__desktop-button--repair {
-  background-image: url(/src/img/repair.svg);
+  background-image: url(../img/repair.svg);
   position: relative;
 
   &::before {
@@ -49,7 +49,7 @@ button {
 }
 
 .main-info__desktop-button--checkstatus {
-  background-image: url(/src/img/checkstatus.svg);
+  background-image: url(../img/checkstatus.svg);
 
   &::before {
     content: 'Статус ремонта';
@@ -72,7 +72,7 @@ button {
     position: absolute;
     width: 8px;
     height: 11px;
-    background: url(/src/img/expand.svg) no-repeat center;
+    background: url(../img/expand.svg) no-repeat center;
     transform: translate(-15px, 3px);
   }
 }

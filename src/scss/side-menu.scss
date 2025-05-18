@@ -39,7 +39,7 @@
 }
 
 .side-menu__top-button--cross {
-  background-image: url(/src/img/cross.svg);
+  background-image: url(../img/cross.svg);
 
   @media screen and (min-width: $screen-lg) {
     display: none;
@@ -47,7 +47,7 @@
 }
 
 .side-menu__top-button--search {
-  background-image: url(/src/img/search.svg);
+  background-image: url(../img/search.svg);
   margin-left: 50px;
 }
 
@@ -79,7 +79,7 @@
   transform: translateY(-6px);
   width: 6px;
   height: 36px;
-  background: url(/src/img/highlight.svg) no-repeat center;
+  background: url(../img/highlight.svg) no-repeat center;
 }
 
 .side-menu a {
@@ -97,15 +97,15 @@
 }
 
 .side-menu__bottom-button--call {
-  background-image: url(/src/img/call.svg);
+  background-image: url(../img/call.svg);
 }
 
 .side-menu__bottom-button--chat {
-  background-image: url(/src/img/chat.svg);
+  background-image: url(../img/chat.svg);
 }
 
 .side-menu__bottom-button--profile {
-  background-image: url(/src/img/profile.svg);
+  background-image: url(../img/profile.svg);
 }
 
 .side-menu__bottom-contacts a {

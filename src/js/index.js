@@ -1,8 +1,19 @@
 import '../scss/style.scss'
-console.log('Works!')
-////////////////////////////////////////////////////////////////////////////////////
-var swiper = Swiper
-// var init = false
+import Swiper, { Navigation, Pagination } from '../../node_modules/swiper'
+
+let mainInfoBtn = document.querySelector('#read-more-btn')
+let brandsBtn = document.querySelector('#show-more-btn-1')
+let featuresBtn = document.querySelector('#show-more-btn-2')
+let feedbackBtnS = document.querySelectorAll('#feedback-btn')
+let callbackBtnS = document.querySelectorAll('#callback-btn')
+let burger = document.querySelector('#burger-btn')
+let brandsSection = document.querySelector('.brands-info')
+let featuresSection = document.querySelector('.features-info')
+let feedback = document.querySelector('.feedback')
+let feedbackWrap = document.querySelector('.feedback__wrapper')
+let form = feedback.querySelector('.form')
+let sideMenu = document.querySelector('.side-menu')
+let sideMenuWrap = document.querySelector('.side-menu__wrapper')
 
 function swiperMode() {
   let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)')
@@ -25,20 +36,6 @@ function swiperMode() {
 window.addEventListener('load', function () {
   swiperMode()
 })
-
-let mainInfoBtn = document.querySelector('#read-more-btn')
-let brandsBtn = document.querySelector('#show-more-btn-1')
-let featuresBtn = document.querySelector('#show-more-btn-2')
-let feedbackBtnS = document.querySelectorAll('#feedback-btn')
-let callbackBtnS = document.querySelectorAll('#callback-btn')
-let burger = document.querySelector('#burger-btn')
-let brandsSection = document.querySelector('.brands-info')
-let featuresSection = document.querySelector('.features-info')
-let feedback = document.querySelector('.feedback')
-let feedbackWrap = document.querySelector('.feedback__wrapper')
-let form = feedback.querySelector('.form')
-let sideMenu = document.querySelector('.side-menu')
-let sideMenuWrap = document.querySelector('.side-menu__wrapper')
 
 let handleShowMore = function (section) {
   let buttonText = section.querySelector('.show-more__text')
