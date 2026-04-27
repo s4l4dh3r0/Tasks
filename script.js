@@ -10,7 +10,8 @@ function swiperMode() {
         init = true;
         swiper = new Swiper('.swiper', {
           direction: 'horizontal',
-          spaceBetween: -50,
+          slidesPerView: "auto",
+          spaceBetween: 20,
               
           pagination: {
             el: '.swiper-pagination',

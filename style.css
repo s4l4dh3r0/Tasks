@@ -14,8 +14,6 @@
 }
 
 body {
-    width: 320px;
-    height: auto;
     font-family: "TT Lakes Regular", serif;
     font-size: 16px;
     margin: 0 auto;
@@ -47,6 +45,15 @@ h1 {
     margin: 0;
 }
 
+.swiper-wrapper {
+    list-style: none;
+    padding: 0;
+}
+
+.swiper-slide {
+    width: 240px;
+}
+
 .swiper-slide a {
     display: flex;
     width: 240px;
@@ -72,7 +79,9 @@ h1 {
 }
 
 .swiper {
-    width: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
 
 .swiper::after {
@@ -90,10 +99,9 @@ h1 {
 
 .swiper-pagination {
     display: flex;
+    justify-content: center;
     position: static;
     gap: 2px;
-    margin-left: 21px;
-    margin-top: 15px;
 }
 
 .swiper-pagination-bullet {
@@ -169,6 +177,7 @@ h1 {
         display: none;
     }
 
+    .swiper-slide,
     .swiper-slide a {
         width: 224px;
     }
@@ -202,6 +211,7 @@ h1 {
         column-gap: 32px;
     }
 
+    .swiper-slide,
     .swiper-slide a {
         width: 240px;
     }
