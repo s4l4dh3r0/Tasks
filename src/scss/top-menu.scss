@@ -1,17 +1,18 @@
 .top-menu {
-  width: 320px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 16px;
+  box-sizing: border-box;
   height: 90px;
   margin: 0;
-  border-bottom: 1px solid $section-border-color;
-  box-sizing: border-box;
   padding: 18px 16px;
-  display: flex;
-  gap: 16px;
-  align-items: center;
+  border-bottom: 1px solid $section-border-color;
+  background-color: $menu-background-color;
 }
 
 .top-menu__button--repair {
-  margin-left: 22px;
+  margin-left: auto;
 
   &::before {
     content: '';

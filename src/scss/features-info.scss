@@ -48,6 +48,7 @@
       height: 160px;
     }
 
+    .swiper-slide,
     .swiper-slide a {
       width: 224px;
     }
@@ -66,7 +67,7 @@
 
     .swiper-wrapper {
       row-gap: 16px;
-      column-gap: 32px;
+      column-gap: 48px;
     }
 
     .swiper-slide a {

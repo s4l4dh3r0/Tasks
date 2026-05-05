@@ -1,5 +1,5 @@
 import '../scss/style.scss'
-import Swiper, { Navigation, Pagination } from '../../node_modules/swiper'
+import Swiper from '../../node_modules/swiper/swiper-bundle'
 
 let mainInfoBtn = document.querySelector('#read-more-btn')
 let brandsBtn = document.querySelector('#show-more-btn-1')
@@ -22,7 +22,8 @@ function swiperMode() {
   if (mobile.matches) {
     swiper = new Swiper('.swiper', {
       direction: 'horizontal',
-      spaceBetween: -20,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
 
       pagination: {
         el: '.swiper-pagination'

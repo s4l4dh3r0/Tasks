@@ -1,5 +1,6 @@
 .swiper {
-  width: 304px;
+  display: flex;
+  flex-direction: column;
 }
 
 .swiper-wrapper {
@@ -8,9 +9,14 @@
   list-style-type: none;
 }
 
+.swiper-slide {
+  width: 240px;
+}
+
 .swiper-slide a {
   display: flex;
   box-sizing: border-box;
+  width: 240px;
   background-color: white;
   border-radius: 8px;
   border: 1px solid #eaeaea;
@@ -54,6 +60,7 @@
 .swiper-pagination {
   display: flex;
   position: static;
+  justify-content: center;
   gap: 2px;
 }
 
@@ -61,4 +68,10 @@
   background-color: #b5b6bc;
   width: 12px;
   height: 12px;
+}
+
+@media screen and (min-width: $screen-md) {
+  .swiper::after {
+    display: none;
+  }
 }
