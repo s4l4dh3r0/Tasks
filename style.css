@@ -1099,8 +1099,8 @@ button.swiper-pagination-bullet {
   src: url(./fonts/TTLakes-Bold.ttf);
 }
 body {
-  width: 320px;
   margin: 0 auto;
+  background-color: #f2f2f2;
 }
 
 main {
@@ -1275,19 +1275,20 @@ button:hover {
 }
 
 .top-menu {
-  width: 320px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 16px;
+  box-sizing: border-box;
   height: 90px;
   margin: 0;
-  border-bottom: 1px solid #d9fff5;
-  box-sizing: border-box;
   padding: 18px 16px;
-  display: flex;
-  gap: 16px;
-  align-items: center;
+  border-bottom: 1px solid #d9fff5;
+  background-color: #ffffff;
 }
 
 .top-menu__button--repair {
-  margin-left: 22px;
+  margin-left: auto;
 }
 .top-menu__button--repair::before {
   content: "";
@@ -1396,10 +1397,11 @@ button:hover {
 }
 
 .company-image {
-  width: 320px;
-  height: 176px;
-  margin-left: -16px;
+  margin-left: -4px;
   padding: 16px 0 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 55vmin;
 }
 
 @media screen and (min-width: 767px) {
@@ -1456,7 +1458,8 @@ button:hover {
   }
 }
 .swiper {
-  width: 304px;
+  display: flex;
+  flex-direction: column;
 }
 
 .swiper-wrapper {
@@ -1465,9 +1468,14 @@ button:hover {
   list-style-type: none;
 }
 
+.swiper-slide {
+  width: 240px;
+}
+
 .swiper-slide a {
   display: flex;
   box-sizing: border-box;
+  width: 240px;
   background-color: white;
   border-radius: 8px;
   border: 1px solid #eaeaea;
@@ -1509,6 +1517,7 @@ button:hover {
 .swiper-pagination {
   display: flex;
   position: static;
+  justify-content: center;
   gap: 2px;
 }
 
@@ -1518,6 +1527,11 @@ button:hover {
   height: 12px;
 }
 
+@media screen and (min-width: 767px) {
+  .swiper::after {
+    display: none;
+  }
+}
 .brands-info {
   padding: 0 0 16px;
 }
@@ -1526,7 +1540,6 @@ button:hover {
   height: 72px;
 }
 .brands-info .swiper-pagination {
-  margin-left: 21px;
   margin-top: 15px;
 }
 @media screen and (max-width: 767px) {
@@ -1551,6 +1564,7 @@ button:hover {
     overflow: hidden;
     height: 160px;
   }
+  .brands-info .swiper-slide,
   .brands-info .swiper-slide a {
     width: 224px;
   }
@@ -1563,8 +1577,8 @@ button:hover {
     width: 1120px;
   }
   .brands-info .swiper-wrapper {
-    -moz-column-gap: 32px;
-         column-gap: 32px;
+    -moz-column-gap: 48px;
+         column-gap: 48px;
   }
   .brands-info .swiper-slide a {
     width: 240px;
@@ -1611,6 +1625,7 @@ button:hover {
     overflow: hidden;
     height: 160px;
   }
+  .features-info .swiper-slide,
   .features-info .swiper-slide a {
     width: 224px;
   }
@@ -1624,8 +1639,8 @@ button:hover {
   }
   .features-info .swiper-wrapper {
     row-gap: 16px;
-    -moz-column-gap: 32px;
-         column-gap: 32px;
+    -moz-column-gap: 48px;
+         column-gap: 48px;
   }
   .features-info .swiper-slide a {
     width: 240px;
@@ -1666,6 +1681,9 @@ button:hover {
 .price-info .swiper-pagination {
   display: block;
   margin-top: 16px;
+}
+.price-info .swiper-slide {
+  width: 260px;
 }
 
 .price-card {
@@ -1801,13 +1819,18 @@ button:hover {
 .side-menu {
   display: none;
   top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
 .side-menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 320px;
+  height: 100%;
   background-color: #ffffff;
   box-sizing: border-box;
   margin: 0;
@@ -1821,6 +1844,7 @@ button:hover {
 
 .side-menu--opened {
   display: block;
+  flex-direction: column;
   position: fixed;
   z-index: 10;
 }
@@ -1887,10 +1911,6 @@ button:hover {
   color: #1b1c21;
 }
 
-.side-menu__bottom {
-  margin-bottom: 40px;
-}
-
 .side-menu__bottom-buttons {
   display: flex;
   gap: 16px;
@@ -1929,11 +1949,6 @@ button:hover {
   color: #7e7e82;
 }
 
-@media screen and (min-width: 767px) {
-  .side-menu__main {
-    margin-bottom: 236px;
-  }
-}
 @media screen and (min-width: 1440px) {
   .desktop-page__wrapper {
     display: flex;
@@ -1941,11 +1956,10 @@ button:hover {
   }
   .side-menu {
     display: block;
-    position: static;
+    position: sticky;
     z-index: 0;
   }
   .side-menu__wrapper {
-    display: block;
     position: static;
     width: 320px;
     box-shadow: none;
